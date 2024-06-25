@@ -13,6 +13,7 @@ import java.io.UnsupportedEncodingException;
 public class PrintController {
 
     @PostMapping("/printReceipt")
+    @CrossOrigin
     public String printReceipt(@RequestBody ReceiptRequest receiptRequest) {
         try {
             ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
